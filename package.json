@@ -1,0 +1,27 @@
+{
+  "name": "react-service-provider",
+  "version": "0.0.1",
+  "description": "Very simple general services provider implementation, to be able to inject services in any component inside of an application",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "umd:main": "dist/index.umd.js",
+  "source": "index.js",
+  "scripts": {
+    "build": "rollup -c --environment FORMAT:umd && rollup -c --environment FORMAT:cjs && rollup -c --environment FORMAT:es",
+    "test": "echo \"Error: adding tests and docs soon\" && exit 1"
+  },
+  "author": "Diogo Beda <diogo.fbeda@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.52.1",
+    "rollup-plugin-buble": "^0.18.0",
+    "rollup-plugin-es3": "^1.1.0",
+    "rollup-plugin-post-replace": "^1.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "uglify-js": "^3.2.1"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15",
+    "react": ">=15"
+  }
+}
